@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "defi_common"
+version = "0.1.96"
+description = ""
+authors = ["Tomas Toth <tomas.toth004@gmail.com>"]
+packages = [
+    {"include"="defi_common"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pre-commit = "^2.20.0"
+sqlalchemy = "^1.4.44"
+pytest = "^7.2.0"
+python-dotenv = "^0.21.0"
+pydantic = "^1.10.4"
+fastapi-users = {extras = ["sqlalchemy"], version = "^10.3.0"}
+alembic = "^1.9.2"
+asyncpg = "^0.27.0"
+psycopg2-binary = "^2.9.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
